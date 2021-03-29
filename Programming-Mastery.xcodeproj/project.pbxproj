@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC93ECB026129E5F00CD5E20 /* Programming_MasteryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93EC9D26129E5E00CD5E20 /* Programming_MasteryApp.swift */; };
+		CC93ECB126129E5F00CD5E20 /* Programming_MasteryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93EC9D26129E5E00CD5E20 /* Programming_MasteryApp.swift */; };
+		CC93ECB226129E5F00CD5E20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93EC9E26129E5E00CD5E20 /* ContentView.swift */; };
+		CC93ECB326129E5F00CD5E20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93EC9E26129E5E00CD5E20 /* ContentView.swift */; };
+		CC93ECB426129E5F00CD5E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC93EC9F26129E5F00CD5E20 /* Assets.xcassets */; };
+		CC93ECB526129E5F00CD5E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC93EC9F26129E5F00CD5E20 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC93EC9D26129E5E00CD5E20 /* Programming_MasteryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programming_MasteryApp.swift; sourceTree = "<group>"; };
+		CC93EC9E26129E5E00CD5E20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CC93EC9F26129E5F00CD5E20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC93ECA426129E5F00CD5E20 /* Programming-Mastery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Programming-Mastery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC93ECA726129E5F00CD5E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC93ECAC26129E5F00CD5E20 /* Programming-Mastery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Programming-Mastery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC93ECAE26129E5F00CD5E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC93ECAF26129E5F00CD5E20 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC93ECA126129E5F00CD5E20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC93ECA926129E5F00CD5E20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC93EC9726129E5E00CD5E20 = {
+			isa = PBXGroup;
+			children = (
+				CC93EC9C26129E5E00CD5E20 /* Shared */,
+				CC93ECA626129E5F00CD5E20 /* iOS */,
+				CC93ECAD26129E5F00CD5E20 /* macOS */,
+				CC93ECA526129E5F00CD5E20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC93EC9C26129E5E00CD5E20 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CC93EC9D26129E5E00CD5E20 /* Programming_MasteryApp.swift */,
+				CC93EC9E26129E5E00CD5E20 /* ContentView.swift */,
+				CC93EC9F26129E5F00CD5E20 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CC93ECA526129E5F00CD5E20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC93ECA426129E5F00CD5E20 /* Programming-Mastery.app */,
+				CC93ECAC26129E5F00CD5E20 /* Programming-Mastery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC93ECA626129E5F00CD5E20 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CC93ECA726129E5F00CD5E20 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		CC93ECAD26129E5F00CD5E20 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				CC93ECAE26129E5F00CD5E20 /* Info.plist */,
+				CC93ECAF26129E5F00CD5E20 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC93ECA326129E5F00CD5E20 /* Programming-Mastery (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC93ECB826129E5F00CD5E20 /* Build configuration list for PBXNativeTarget "Programming-Mastery (iOS)" */;
+			buildPhases = (
+				CC93ECA026129E5F00CD5E20 /* Sources */,
+				CC93ECA126129E5F00CD5E20 /* Frameworks */,
+				CC93ECA226129E5F00CD5E20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Programming-Mastery (iOS)";
+			productName = "Programming-Mastery (iOS)";
+			productReference = CC93ECA426129E5F00CD5E20 /* Programming-Mastery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC93ECAB26129E5F00CD5E20 /* Programming-Mastery (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC93ECBB26129E5F00CD5E20 /* Build configuration list for PBXNativeTarget "Programming-Mastery (macOS)" */;
+			buildPhases = (
+				CC93ECA826129E5F00CD5E20 /* Sources */,
+				CC93ECA926129E5F00CD5E20 /* Frameworks */,
+				CC93ECAA26129E5F00CD5E20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Programming-Mastery (macOS)";
+			productName = "Programming-Mastery (macOS)";
+			productReference = CC93ECAC26129E5F00CD5E20 /* Programming-Mastery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC93EC9826129E5E00CD5E20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CC93ECA326129E5F00CD5E20 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CC93ECAB26129E5F00CD5E20 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = CC93EC9B26129E5E00CD5E20 /* Build configuration list for PBXProject "Programming-Mastery" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC93EC9726129E5E00CD5E20;
+			productRefGroup = CC93ECA526129E5F00CD5E20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC93ECA326129E5F00CD5E20 /* Programming-Mastery (iOS) */,
+				CC93ECAB26129E5F00CD5E20 /* Programming-Mastery (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC93ECA226129E5F00CD5E20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC93ECB426129E5F00CD5E20 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC93ECAA26129E5F00CD5E20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC93ECB526129E5F00CD5E20 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC93ECA026129E5F00CD5E20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC93ECB226129E5F00CD5E20 /* ContentView.swift in Sources */,
+				CC93ECB026129E5F00CD5E20 /* Programming_MasteryApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC93ECA826129E5F00CD5E20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC93ECB326129E5F00CD5E20 /* ContentView.swift in Sources */,
+				CC93ECB126129E5F00CD5E20 /* Programming_MasteryApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CC93ECB626129E5F00CD5E20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC93ECB726129E5F00CD5E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CC93ECB926129E5F00CD5E20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88QL9VPLMY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.transfinite.Programming-Mastery";
+				PRODUCT_NAME = "Programming-Mastery";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC93ECBA26129E5F00CD5E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88QL9VPLMY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.transfinite.Programming-Mastery";
+				PRODUCT_NAME = "Programming-Mastery";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC93ECBC26129E5F00CD5E20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 88QL9VPLMY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.transfinite.Programming-Mastery";
+				PRODUCT_NAME = "Programming-Mastery";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CC93ECBD26129E5F00CD5E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 88QL9VPLMY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.transfinite.Programming-Mastery";
+				PRODUCT_NAME = "Programming-Mastery";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC93EC9B26129E5E00CD5E20 /* Build configuration list for PBXProject "Programming-Mastery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC93ECB626129E5F00CD5E20 /* Debug */,
+				CC93ECB726129E5F00CD5E20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC93ECB826129E5F00CD5E20 /* Build configuration list for PBXNativeTarget "Programming-Mastery (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC93ECB926129E5F00CD5E20 /* Debug */,
+				CC93ECBA26129E5F00CD5E20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC93ECBB26129E5F00CD5E20 /* Build configuration list for PBXNativeTarget "Programming-Mastery (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC93ECBC26129E5F00CD5E20 /* Debug */,
+				CC93ECBD26129E5F00CD5E20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC93EC9826129E5E00CD5E20 /* Project object */;
+}
