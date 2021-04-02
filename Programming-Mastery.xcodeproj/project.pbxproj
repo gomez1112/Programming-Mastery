@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC8910D72613D38C0063E87E /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8910D62613D38C0063E87E /* Course.swift */; };
 		CC93ECB026129E5F00CD5E20 /* Programming_MasteryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93EC9D26129E5E00CD5E20 /* Programming_MasteryApp.swift */; };
 		CC93ECB126129E5F00CD5E20 /* Programming_MasteryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93EC9D26129E5E00CD5E20 /* Programming_MasteryApp.swift */; };
 		CC93ECB226129E5F00CD5E20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93EC9E26129E5E00CD5E20 /* ContentView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC8910D62613D38C0063E87E /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		CC93EC9D26129E5E00CD5E20 /* Programming_MasteryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programming_MasteryApp.swift; sourceTree = "<group>"; };
 		CC93EC9E26129E5E00CD5E20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC93EC9F26129E5F00CD5E20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC8910D52613D3800063E87E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC8910D62613D38C0063E87E /* Course.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CC93EC9726129E5E00CD5E20 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 		CC93EC9C26129E5E00CD5E20 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CC8910D52613D3800063E87E /* Model */,
 				CC93ECDD2612BA8C00CD5E20 /* Items */,
 				CC93ECD92612BA6F00CD5E20 /* Navigation */,
 				CC93ECC02612B14C00CD5E20 /* View */,
@@ -227,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8910D72613D38C0063E87E /* Course.swift in Sources */,
 				CC93ECCC2612B35500CD5E20 /* Sidebar.swift in Sources */,
 				CC93ECD02612B91F00CD5E20 /* CourseItem.swift in Sources */,
 				CC93ECB226129E5F00CD5E20 /* ContentView.swift in Sources */,
