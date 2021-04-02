@@ -22,7 +22,7 @@ struct Sidebar: View {
             content
                 .frame(minWidth: 200, idealWidth: 250, maxWidth: 300)
                 .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
+                    ToolbarItem(placement: .automatic) {
                         Button(action: {
                             
                         }) {

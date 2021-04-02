@@ -17,14 +17,30 @@ struct CoursesView: View {
     
     var body: some View {
         ZStack {
-            ScrollView {
-                LazyVGrid(columns: [gridItem], spacing: 16) {
-                    ForEach(Course.courses) { course in
+            
+            #if os(iOS)
+            content
+                .navigationBarHidden(true)
+            fullContent
+                .background(VisualEffectBlur(blurStyle: .systemMaterial).edgesIgnoringSafeArea(.all))
+            #else
+            content
+            fullContent
+                .background(VisualEffectBlur().edgesIgnoringSafeArea(.all))
+            #endif
+        }
+        .navigationTitle("Courses")
+    }
+    var content: some View {
+        ScrollView {
+            LazyVGrid(columns: [gridItem], spacing: 16) {
+                ForEach(Course.courses) { course in
+                    VStack {
                         CourseItem(course: course)
                             .matchedGeometryEffect(id: course.id, in: namespace, isSource: !show)
                             .frame(height: 200)
                             .onTapGesture {
-                                withAnimation(.spring()) {
+                                withAnimation(.spring(response: 0.5, dampingFraction: 0.7, blendDuration: 0)) {
                                     show.toggle()
                                     selectedCourse = course
                                     isDisabled = true
@@ -32,39 +48,36 @@ struct CoursesView: View {
                             }
                             .disabled(isDisabled)
                     }
+                    .matchedGeometryEffect(id: "container\(course.id)", in: namespace, isSource: !show)
                 }
-                .padding(16)
-                .frame(maxWidth: .infinity)
             }
-            
-            if selectedCourse != nil {
-                ScrollView {
-                    CourseItem(course: selectedCourse!)
-                        .matchedGeometryEffect(id: selectedCourse!.id, in: namespace)
-                        .frame(height: 300)
-                        .onTapGesture {
-                            withAnimation(.spring()) {
-                                show.toggle()
-                                selectedCourse = nil
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                    isDisabled = false
-                                }
+            .padding(16)
+            .frame(maxWidth: .infinity)
+        }
+        .zIndex(1)
+    }
+    @ViewBuilder
+    var fullContent: some View {
+        if selectedCourse != nil {
+            ZStack(alignment: .topTrailing) {
+                CourseDetail(course: selectedCourse!, namespace: namespace)
+                
+                CloseButton()
+                    .padding(16)
+                    .onTapGesture {
+                        withAnimation(.spring()) {
+                            show.toggle()
+                            selectedCourse = nil
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                isDisabled = false
                             }
                         }
-                    VStack(spacing: 10) {
-                        ForEach(0..<20) { item in
-                            CourseRow()
-                        }
                     }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-                    .padding()
-                }
-                .background(Color("Background 1"))
-                .transition(.asymmetric(
-                                insertion: AnyTransition.opacity.animation(Animation.spring().delay(0.3)),
-                                removal: AnyTransition.opacity.animation(.spring())))
-                .edgesIgnoringSafeArea(.all)
+                
             }
+            .zIndex(2)
+            .frame(maxWidth: 712)
+            .frame(maxWidth: .infinity)
         }
     }
 }
@@ -73,8 +86,6 @@ struct CoursesView: View {
 
 struct CoursesView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
             CoursesView()
-        }
     }
 }

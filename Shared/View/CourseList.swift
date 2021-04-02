@@ -19,7 +19,7 @@ struct CourseList: View {
         #endif
     }
     var content: some View {
-        List(0..<10) { item in
+        List(0..<20) { item in
             CourseRow()
         }
         .navigationTitle("Courses")
